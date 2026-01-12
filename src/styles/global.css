@@ -1,17 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  --ether-dusky-rose: #be5a83;
+  --ether-lavender: #b19cd9;
+  --ether-teal: #00a99d;
+  --ether-off-white: #fafafa;
+  --ether-black: #000000;
+  --ether-ivory: #f7f2e9;
+  --ether-ink: #101010;
+  --ether-ink-soft: #3b3b3b;
+  --ether-ember: #f05a3a;
+  --ether-teal-deep: #006f6f;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+  background-color: var(--ether-ivory);
+}
   
-  header, footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
+main {
+  padding: 2rem;
+}
+
+  .brand-dusky-rose { color: var(--ether-dusky-rose); }
+  .brand-lavender { color: var(--ether-lavender); }
+  .brand-teal { color: var(--ether-teal); }
   
-  main {
-    padding: 2rem;
-  }
+  .bg-dusky-rose { background-color: var(--ether-dusky-rose); }
+  .bg-lavender { background-color: var(--ether-lavender); }
+  .bg-teal { background-color: var(--ether-teal); }
   

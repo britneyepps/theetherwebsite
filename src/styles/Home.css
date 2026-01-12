@@ -1,226 +1,269 @@
 /* --------------------------------------------------------
-   Layout & spacing
+   Home layout
    -------------------------------------------------------- */
-   .home-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    font-family: Arial, sans-serif;
-    color: #222;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 5rem;
+  background: radial-gradient(circle at top left, rgba(0, 169, 157, 0.08), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(190, 90, 131, 0.12), transparent 40%),
+    radial-gradient(circle at 30% 80%, rgba(177, 156, 217, 0.12), transparent 45%),
+    var(--ether-ivory);
+  color: var(--ether-ink);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------
+   Hero
+   -------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.hero-aura {
+  position: absolute;
+  inset: 2rem auto auto 20%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(0, 169, 157, 0.2), transparent 70%);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-image {
+  background: linear-gradient(135deg, rgba(0, 169, 157, 0.12), rgba(190, 90, 131, 0.2));
+  border-radius: 20px;
+  min-height: 220px;
+  border: 1px solid rgba(16, 16, 16, 0.08);
+}
+
+.hero-image-main {
+  min-height: 280px;
+}
+
+.hero-image-accent {
+  max-width: 80%;
+  justify-self: end;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-animation-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.animated-logo {
+  height: 90px;
+  width: auto;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin: 0 0 1rem;
+}
+
+.hero-tagline {
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  max-width: 520px;
+  margin: 0 0 2rem;
+  color: var(--ether-teal-deep);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button.primary {
+  background-color: var(--ether-teal);
+  color: var(--ether-ivory);
+  box-shadow: 0 10px 30px rgba(0, 169, 157, 0.25);
+}
+
+.hero-button.secondary {
+  background-color: var(--ether-dusky-rose);
+  color: var(--ether-ivory);
+  box-shadow: 0 10px 30px rgba(190, 90, 131, 0.2);
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------
+   Definition snapshot
+   -------------------------------------------------------- */
+.definition-section {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.definition-title {
+  font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 0.75rem;
+}
+
+.definition-line {
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  color: var(--ether-ink-soft);
+  font-size: 1.05rem;
+}
+
+.descriptor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.descriptor-grid span {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(0, 169, 157, 0.25);
+  box-shadow: 0 12px 24px rgba(0, 169, 157, 0.08);
+}
+
+/* --------------------------------------------------------
+   Space glance
+   -------------------------------------------------------- */
+.space-section {
+  padding: 0 1.5rem;
+}
+
+.section-heading {
+  font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtext {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  color: var(--ether-ink-soft);
+}
+
+.space-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.space-image {
+  min-height: 200px;
+  background: linear-gradient(135deg, rgba(0, 169, 157, 0.12), rgba(190, 90, 131, 0.18));
+  border-radius: 18px;
+  border: 1px solid rgba(16, 16, 16, 0.08);
+}
+
+.space-cta {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------
+   Closing CTA
+   -------------------------------------------------------- */
+.closing-cta {
+  text-align: center;
+  padding: 0 1.5rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(0, 169, 157, 0.12), rgba(190, 90, 131, 0.12));
+  border-radius: 24px;
+  border: 1px solid rgba(16, 16, 16, 0.08);
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.closing-line {
+  font-size: 1.4rem;
+  margin-bottom: 1.75rem;
+  color: var(--ether-ink);
+}
+
+/* --------------------------------------------------------
+   Reveal animations
+   -------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: reveal 0.8s ease forwards;
+}
+
+.reveal.delay-1 {
+  animation-delay: 0.15s;
+}
+
+.reveal.delay-2 {
+  animation-delay: 0.3s;
+}
+
+.reveal.delay-3 {
+  animation-delay: 0.45s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* --------------------------------------------------------
-     Hero / Intro Section
-     -------------------------------------------------------- */
+}
+
+/* --------------------------------------------------------
+   Responsive tweaks
+   -------------------------------------------------------- */
+@media (max-width: 700px) {
   .hero-section {
-    text-align: center;
-    padding: 4rem 1rem 6rem;
-    background-color: #f8f8f8;
+    padding: 4rem 1.5rem 1rem;
   }
-  
-  .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .hero-tagline {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #555;
-  }
-  
-  .hero-keywords {
-    display: flex;
-    flex-wrap: wrap;
+
+  .logo-animation-container {
     justify-content: center;
-    gap: 1rem;
   }
-  
-  .hero-keywords span {
-    background-color: #e0e0e0;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+
+  .hero-actions {
+    justify-content: center;
   }
-  
-  /* --------------------------------------------------------
-     Activate the Studio Section
-     -------------------------------------------------------- */
-  .activate-section {
-    background-color: #fff;
-    padding: 2rem 1rem;
+
+  .hero-image-accent {
+    max-width: 100%;
   }
-  
-  .activate-intro {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    text-align: center;
-    font-size: 1.05rem;
-    color: #333;
-  }
-  
-  .activate-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .activate-card {
-    background-color: #fafafa;
-    border-radius: 8px;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .placeholder-icon {
-    width: 60px;
-    height: 60px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-  }
-  
-  .activate-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #111;
-  }
-  
-  .activate-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
-  }
-  
-  /* --------------------------------------------------------
-     Section headings
-     -------------------------------------------------------- */
-  .section-heading {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #111;
-  }
-  
-  /* --------------------------------------------------------
-     Mission Section
-     -------------------------------------------------------- */
-  .mission-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .mission-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: center;
-    color: #333;
-  }
-  
-  /* --------------------------------------------------------
-     Collective (team) Section
-     -------------------------------------------------------- */
-  .collective-section {
-    padding: 0 1rem;
-  }
-  
-  .collective-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .member-card {
-    text-align: center;
-  }
-  
-  .placeholder-image {
-    width: 100%;
-    height: 160px;
-    background-color: #ccc;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-  }
-  
-  .member-name {
-    font-size: 1.2rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .member-role {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* --------------------------------------------------------
-     Space Section
-     -------------------------------------------------------- */
-  .space-section {
-    padding: 0 1rem;
-  }
-  
-  .space-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .placeholder-image-large {
-    flex: 1 1 300px;
-    height: 200px;
-    background-color: #ccc;
-    border-radius: 8px;
-  }
-  
-  .space-info {
-    flex: 1 1 300px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* --------------------------------------------------------
-     Responsive tweaks
-     -------------------------------------------------------- */
-  @media (max-width: 600px) {
-    .hero-section {
-      padding: 3rem 1rem 4rem;
-    }
-  
-    .hero-title {
-      font-size: 2rem;
-    }
-  
-    .hero-tagline {
-      font-size: 1rem;
-    }
-  
-    .activate-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .collective-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .space-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .space-info {
-      padding-top: 1rem;
-    }
-  }
-  
+}

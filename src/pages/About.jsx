@@ -1,131 +1,120 @@
 import React from 'react';
-import '../styles/About.css'
+import '../styles/About.css';
 
 const About = () => {
   return (
     <div className="about-container">
-      {/* ——— Our Story / Founding ——— */}
-      <section className="story-section">
-        <h2 className="section-heading">Our Story</h2>
-        <p className="story-text">
-          The Ether Detroit was founded in March 2025 by four Detroit-based creatives:
-          a place to amplify Black, queer artistry through cross-disciplinary collaboration.
-          We believe in disruption, cultural authenticity, and sustainable impact.
+      <section className="about-hero">
+        <p className="about-eyebrow">About THE ETHER DETROIT</p>
+        <h1 className="about-title">A boundless space that sparks change and ignites creativity.</h1>
+        <p className="about-intro">
+          THE ETHER DETROIT is a studio and creative practice grounded in Black,
+          queer artistry. We work at an intentional scale so ideas can breathe,
+          evolve, and become something real.
         </p>
       </section>
 
-      {/* ——— Meet the Collective ——— */}
-      <section className="meet-section">
-        <h2 className="section-heading">Meet the Collective</h2>
-        <div className="meet-grid">
-          {/* Nerd */}
-          <div className="meet-card">
-            <div className="placeholder-profile" />
-            <h3 className="meet-name">Nerd</h3>
-            <p className="meet-role">
-              Fashion Designer & Stylist / Technology Developer
+      <section className="mission-section">
+        <h2 className="section-heading">Mission statement</h2>
+        <p className="mission-text">
+          “To redefine Detroit&apos;s creative landscape through the power of Black,
+          queer artistry, merging sustainable fashion, radical visual art, and
+          intersectional storytelling to inspire, disrupt, and transform culture.”
+        </p>
+      </section>
+
+      <section className="story-section">
+        <div className="story-grid">
+          <div className="story-copy">
+            <h2 className="section-heading">Why THE ETHER DETROIT exists</h2>
+            <p className="story-text">
+              Detroit taught us how to build with what we have and dream beyond what we
+              see. THE ETHER DETROIT exists to hold that energy — a container for process,
+              experimentation, and cross-disciplinary work that honors the city’s
+              legacy of making and remixing.
             </p>
-            <div className="meet-links">
-              <a href="https://nerd-portfolio.example.com" target="_blank" rel="noopener noreferrer">
-                Portfolio
-              </a>
-              <span> | </span>
-              <a href="https://nerdconsulting.tech" target="_blank" rel="noopener noreferrer">
-                Business Site
-              </a>
-            </div>
+            <p className="story-text">
+              This is a space for deliberate creation: small enough to stay human,
+              large enough to shift culture.
+            </p>
           </div>
-
-          {/* Snazz */}
-          <div className="meet-card">
-            <div className="placeholder-profile" />
-            <h3 className="meet-name">Snazz</h3>
-            <p className="meet-role">Short-form Content Creator</p>
-            <div className="meet-links">
-              <a href="https://snazz-portfolio.example.com" target="_blank" rel="noopener noreferrer">
-                Portfolio
-              </a>
-              <span> | </span>
-              <a href="https://snazzstudio.example.com" target="_blank" rel="noopener noreferrer">
-                Business Site
-              </a>
-            </div>
-          </div>
-
-          {/* Miles */}
-          <div className="meet-card">
-            <div className="placeholder-profile" />
-            <h3 className="meet-name">Miles</h3>
-            <p className="meet-role">Director & Producer</p>
-            <div className="meet-links">
-              <a href="https://miles-portfolio.example.com" target="_blank" rel="noopener noreferrer">
-                Portfolio
-              </a>
-              <span> | </span>
-              <a href="https://milesproductions.example.com" target="_blank" rel="noopener noreferrer">
-                Business Site
-              </a>
-            </div>
-          </div>
-
-          {/* AR */}
-          <div className="meet-card">
-            <div className="placeholder-profile" />
-            <h3 className="meet-name">AR</h3>
-            <p className="meet-role">Photographer / Videographer</p>
-            <div className="meet-links">
-              <a href="https://ar-portfolio.example.com" target="_blank" rel="noopener noreferrer">
-                Portfolio
-              </a>
-              <span> | </span>
-              <a href="https://arstudios.example.com" target="_blank" rel="noopener noreferrer">
-                Business Site
-              </a>
-            </div>
+          <div className="story-visual" aria-hidden="true">
+            <div className="story-image" />
           </div>
         </div>
       </section>
 
-      {/* ——— What We Stand For ——— */}
+      <section className="detroit-root">
+        <div className="detroit-grid">
+          <div className="detroit-visual" aria-hidden="true">
+            <div className="story-image" />
+          </div>
+          <div className="detroit-copy">
+            <h2 className="section-heading">Detroit as creative root</h2>
+            <p className="intent-text">
+              We are rooted in Detroit’s creative lineage and its radical imagination.
+              Every project is informed by the city — its people, its resilience, and
+              its refusal to be boxed in.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="values-section">
-        <h2 className="section-heading">What We Stand For</h2>
+        <h2 className="section-heading">What we stand for</h2>
         <p className="values-text">
-          We’re not just creators—we’re connectors. Our extensive network and diverse creative capabilities unite artists,
-          brands, and communities. With authentic lived experiences and a collaborative approach, your story doesn’t just reach audiences—it moves them.
+          These values are lived daily in the studio and in the way we partner.
         </p>
         <ul className="values-list">
           <li>Intersectional storytelling</li>
-          <li>Cultural authenticity & awareness</li>
+          <li>Cultural authenticity</li>
           <li>Cross-disciplinary collaboration</li>
           <li>Community connection</li>
-          <li>Innovation & disruption</li>
-          <li>Sustainability & social impact</li>
+          <li>Innovation and disruption</li>
+          <li>Sustainability and social impact</li>
           <li>Detroit roots</li>
         </ul>
       </section>
 
-      {/* ——— The Space & Amenities ——— */}
-      <section className="about-space-section">
-        <h2 className="section-heading">The Space & Amenities</h2>
-        <div className="about-space-content">
-          <div className="placeholder-image-large"></div>
-          <div className="about-space-info">
-            <p>
-              Our studio occupies a total of <strong>1,200 sq ft</strong>, with <strong>800 sq ft</strong> available for rent.
-              That space can be configured for:
+      <section className="meet-section">
+        <h2 className="section-heading">The People</h2>
+        <div className="meet-grid">
+          <div className="meet-card">
+            <div className="placeholder-profile" />
+            <h3 className="meet-name">Nerd</h3>
+            <p className="meet-role">Fashion Designer & Stylist / Technology Developer</p>
+            <p className="meet-bio">
+              Builds wearable worlds and digital tools that support bold
+              storytelling.
             </p>
-            <ul className="amenities-list">
-              <li>Coworking days (open seating during business hours)</li>
-              <li>Short-term storage for props, supplies, and finished work</li>
-              <li>Rotating hands-on workshops (from sustainable fashion to lighting)</li>
-              <li>DJ sessions</li>
-              <li>Pop-ups, film shoots, gallery installations, and more upon request</li>
-            </ul>
-            <p>
-              Located in the heart of the Russell Industrial Center, we’re rooted in Detroit’s legacy
-              while pushing toward tomorrow. Our backdrop, lighting rigs, and flexible floor plan are
-              designed to bring your vision to life.
+            <p className="meet-focus">Creative focus: fashion systems + visual identity.</p>
+            <a
+              className="meet-brand"
+              href="https://www.showbothrows.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              House of Both Rows
+            </a>
+          </div>
+
+          <div className="meet-card">
+            <div className="placeholder-profile" />
+            <h3 className="meet-name">AR</h3>
+            <p className="meet-role">Photographer / Videographer</p>
+            <p className="meet-bio">
+              Captures the texture of Detroit with a focus on movement, mood, and
+              intimacy.
             </p>
+            <p className="meet-focus">Creative focus: photo + film direction.</p>
+            <a
+              className="meet-brand"
+              href="https://www.roguesgallery.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rogue&apos;s Gallery
+            </a>
           </div>
         </div>
       </section>
