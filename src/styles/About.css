@@ -90,6 +90,16 @@
   border: 1px solid rgba(16, 16, 16, 0.08);
 }
 
+.story-photo {
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 16px 38px rgba(16, 16, 16, 0.1);
+}
+
+.story-photo-portrait {
+  object-position: center 22%;
+}
+
 .story-text + .story-text {
   margin-top: 1rem;
 }

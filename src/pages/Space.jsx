@@ -1,5 +1,8 @@
 import React from 'react';
 import '../styles/Space.css';
+import heroSpaceImage from '../assets/main/07022025-10.jpg';
+import spaceGalleryImageOne from '../assets/main/07022025.jpg';
+import spaceGalleryImageTwo from '../assets/main/07022025-11.jpg';
 
 const Space = () => {
   return (
@@ -26,8 +29,11 @@ const Space = () => {
           </a>
         </div>
         <div className="space-hero-visual" aria-hidden="true">
-          <div className="space-image space-image-large" />
-          <div className="space-image space-image-small" />
+          <img
+            className="space-image space-image-large"
+            src={heroSpaceImage}
+            alt="Wide view of THE ETHER DETROIT studio."
+          />
         </div>
       </section>
 
@@ -52,9 +58,21 @@ const Space = () => {
           </p>
         </div>
         <div className="space-supported-visual" aria-hidden="true">
-          <div className="space-image" />
-          <div className="space-image" />
-          <div className="space-image" />
+          <img
+            className="space-image"
+            src={spaceGalleryImageOne}
+            alt="Creative production setup inside THE ETHER DETROIT."
+          />
+          <img
+            className="space-image"
+            src={spaceGalleryImageTwo}
+            alt="Studio lounge and lighting setup inside THE ETHER DETROIT."
+          />
+          <img
+            className="space-image"
+            src={heroSpaceImage}
+            alt="Open studio floor at THE ETHER DETROIT."
+          />
         </div>
       </section>
 

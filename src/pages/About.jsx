@@ -1,5 +1,7 @@
 import React from 'react';
 import arProfilePic from '../assets/AR_PROFILE_PIC.jpg';
+import aboutDetroitImage from '../assets/about/6DD5674B-0F6C-4704-AFA3-3C8CB828E219.png';
+import aboutStoryImage from '../assets/about/BA89BE2C-1391-42DB-97A4-E3409EE32906 (1).jpg';
 import '../styles/About.css';
 
 const About = () => {
@@ -40,7 +42,11 @@ const About = () => {
             </p>
           </div>
           <div className="story-visual" aria-hidden="true">
-            <div className="story-image" />
+            <img
+              className="story-image story-photo"
+              src={aboutStoryImage}
+              alt="Community gathered inside THE ETHER DETROIT studio."
+            />
           </div>
         </div>
       </section>
@@ -48,7 +54,11 @@ const About = () => {
       <section className="detroit-root">
         <div className="detroit-grid">
           <div className="detroit-visual" aria-hidden="true">
-            <div className="story-image" />
+            <img
+              className="story-image story-photo story-photo-portrait"
+              src={aboutDetroitImage}
+              alt="Artwork and styling portrait connected to THE ETHER DETROIT."
+            />
           </div>
           <div className="detroit-copy">
             <h2 className="section-heading">Detroit as creative root</h2>

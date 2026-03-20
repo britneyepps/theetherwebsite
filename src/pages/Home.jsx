@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import logoTeal from '../assets/the_ether_teal.png';
+import heroMainImage from '../assets/main/07022025-10.jpg';
+import galleryImageOne from '../assets/main/07022025.jpg';
+import galleryImageTwo from '../assets/main/07022025-11.jpg';
 
 const Home = () => {
   return (
@@ -9,8 +12,11 @@ const Home = () => {
       <section className="hero-section">
         <div className="hero-aura" aria-hidden="true" />
         <div className="hero-visual reveal">
-          <div className="hero-image hero-image-main" aria-hidden="true" />
-          <div className="hero-image hero-image-accent" aria-hidden="true" />
+          <img
+            className="hero-image hero-image-main"
+            src={heroMainImage}
+            alt="Wide view of THE ETHER DETROIT studio setup."
+          />
         </div>
         <div className="hero-copy">
           <div className="logo-animation-container">
@@ -63,29 +69,21 @@ const Home = () => {
           </p>
         </div>
         <div className="space-gallery reveal delay-1">
-          <div className="space-image" aria-hidden="true" />
-          <div className="space-image" aria-hidden="true" />
-          <div className="space-image" aria-hidden="true" />
-        </div>
-        <div className="space-cta reveal delay-2">
-          <div className="home-form-actions">
-            <a
-              className="hero-button primary"
-              href="https://www.peerspace.com/pages/listings/682d04fd71ad90bf3ef49acf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book via Peerspace
-            </a>
-            <a
-              className="hero-button secondary"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScXX3QYnnNmS3Xod_6CXzGTXYOE70lr9I2qgjjBX8FdTXvUZg/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Space Use Inquiry Form
-            </a>
-          </div>
+          <img
+            className="space-image"
+            src={galleryImageOne}
+            alt="Creative production area inside THE ETHER DETROIT."
+          />
+          <img
+            className="space-image"
+            src={galleryImageTwo}
+            alt="Studio lounge and lighting setup inside THE ETHER DETROIT."
+          />
+          <img
+            className="space-image"
+            src={heroMainImage}
+            alt="Open studio floor at THE ETHER DETROIT."
+          />
         </div>
       </section>
 
