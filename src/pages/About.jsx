@@ -1,4 +1,5 @@
 import React from 'react';
+import arProfilePic from '../assets/AR_PROFILE_PIC.jpg';
 import '../styles/About.css';
 
 const About = () => {
@@ -82,6 +83,7 @@ const About = () => {
           <div className="meet-card">
             <div className="placeholder-profile" />
             <h3 className="meet-name">Nerd</h3>
+            <p className="meet-pronouns">she / her / they</p>
             <p className="meet-role">Fashion Designer & Stylist / Technology Developer</p>
             <p className="meet-bio">
               Builds wearable worlds and digital tools that support bold
@@ -99,21 +101,29 @@ const About = () => {
           </div>
 
           <div className="meet-card">
-            <div className="placeholder-profile" />
+            <img
+              className="meet-profile-image"
+              src={arProfilePic}
+              alt="Portrait of AR"
+            />
             <h3 className="meet-name">AR</h3>
-            <p className="meet-role">Photographer / Videographer</p>
+            <p className="meet-pronouns">she / her / hers</p>
+            <p className="meet-role">Creative Strategist · Visual Storyteller · Media Specialist</p>
             <p className="meet-bio">
-              Captures the texture of Detroit with a focus on movement, mood, and
-              intimacy.
+              Builds narrative-driven visuals and strategies that help brands,
+              artists, and communities tell their stories across photography,
+              film, and content creation.
             </p>
-            <p className="meet-focus">Creative focus: photo + film direction.</p>
+            <p className="meet-focus">
+              Creative focus: Photography + Brand Development + Film Production
+            </p>
             <a
               className="meet-brand"
-              href="https://www.roguesgallery.com"
+              href="https://www.rogues-gallery.net"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Rogue&apos;s Gallery
+              ROGUE&apos;S GALLERY
             </a>
           </div>
         </div>

@@ -16,6 +16,10 @@ const Contact = () => {
             Prefer email? Reach us at
             <a href="mailto:theetherdetroit@gmail.com"> theetherdetroit@gmail.com</a>.
           </p>
+          <p className="contact-fallback">
+            Need a quick answer? Call
+            <a href="tel:+13136716991"> 313-671-6991</a>.
+          </p>
         </div>
         <div className="contact-hero-visual" aria-hidden="true">
           <div className="contact-image contact-image-large" />
