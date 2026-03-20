@@ -199,6 +199,13 @@
   margin: 0 auto;
 }
 
+.home-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 /* --------------------------------------------------------
    Closing CTA
    -------------------------------------------------------- */

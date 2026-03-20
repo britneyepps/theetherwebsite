@@ -51,13 +51,21 @@ const Community = () => {
       </section>
 
       <section className="community-inquiry">
-        <h2 className="section-heading">Partnership inquiry</h2>
+        <h2 className="section-heading">Community activation inquiry</h2>
         <p className="section-subtext">
-          Start the conversation through our contact page. We’ll follow up with
-          next steps and share a detailed form when needed.
+          If you want to build with THE ETHER DETROIT, start here. Share your
+          activation idea, partnership vision, or community-centered proposal
+          through the form and we’ll review the fit.
         </p>
         <div className="community-cta-row">
-          <a className="community-cta" href="/contact">Go to contact</a>
+          <a
+            className="community-cta"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdcfhBJKsNJHd8mp9_3j5MK2vYY7MT9rNlIxnTLW_zRWMLRjg/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Community Activation Form
+          </a>
         </div>
       </section>
     </div>

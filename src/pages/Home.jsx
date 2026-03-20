@@ -68,22 +68,42 @@ const Home = () => {
           <div className="space-image" aria-hidden="true" />
         </div>
         <div className="space-cta reveal delay-2">
-          <a
-            className="hero-button primary"
-            href="https://www.peerspace.com/pages/listings/682d04fd71ad90bf3ef49acf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book via Peerspace
-          </a>
+          <div className="home-form-actions">
+            <a
+              className="hero-button primary"
+              href="https://www.peerspace.com/pages/listings/682d04fd71ad90bf3ef49acf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book via Peerspace
+            </a>
+            <a
+              className="hero-button secondary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScXX3QYnnNmS3Xod_6CXzGTXYOE70lr9I2qgjjBX8FdTXvUZg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Space Use Inquiry Form
+            </a>
+          </div>
         </div>
       </section>
 
       <section className="closing-cta">
         <p className="closing-line reveal">Have an idea that needs room to breathe?</p>
-        <Link className="hero-button secondary reveal delay-1" to="/contact">
-          Reach out
-        </Link>
+        <div className="home-form-actions reveal delay-1">
+          <a
+            className="hero-button secondary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdcfhBJKsNJHd8mp9_3j5MK2vYY7MT9rNlIxnTLW_zRWMLRjg/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Community Activation Form
+          </a>
+          <Link className="hero-button primary" to="/contact">
+            General Contact
+          </Link>
+        </div>
       </section>
     </div>
   );

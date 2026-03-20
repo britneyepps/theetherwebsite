@@ -54,6 +54,9 @@
 }
 
 .space-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
@@ -62,6 +65,11 @@
   background-color: var(--ether-teal);
   color: var(--ether-ivory);
   box-shadow: 0 10px 30px rgba(0, 169, 157, 0.25);
+}
+
+.space-cta-secondary {
+  background: var(--ether-dusky-rose);
+  box-shadow: 0 10px 30px rgba(190, 90, 131, 0.2);
 }
 
 .space-hero-visual {
@@ -149,6 +157,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.space-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 

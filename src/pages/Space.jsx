@@ -62,17 +62,28 @@ const Space = () => {
         <div className="space-access-copy">
           <h2 className="section-heading">Ready to book?</h2>
           <p className="section-subtext">
-            Reserve the studio through Peerspace. We review each request to keep
-            the space aligned and can support your setup if needed.
+            Reserve the studio through Peerspace for direct bookings, or submit
+            the monthly inquiry form if you want to explore a more intentional
+            studio use conversation with our team.
           </p>
-          <a
-            className="space-cta"
-            href="https://www.peerspace.com/pages/listings/682d04fd71ad90bf3ef49acf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book through Peerspace
-          </a>
+          <div className="space-cta-row">
+            <a
+              className="space-cta"
+              href="https://www.peerspace.com/pages/listings/682d04fd71ad90bf3ef49acf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book through Peerspace
+            </a>
+            <a
+              className="space-cta space-cta-secondary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScXX3QYnnNmS3Xod_6CXzGTXYOE70lr9I2qgjjBX8FdTXvUZg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Monthly Space Use Inquiry
+            </a>
+          </div>
         </div>
       </section>
     </div>
